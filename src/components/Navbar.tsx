@@ -39,9 +39,12 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-6">
         <div className="flex justify-between items-center h-16">
-          <div className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent cursor-pointer">
+          <button
+            onClick={() => scrollToSection('hero')}
+            className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent cursor-pointer hover:scale-105 transition-transform duration-300"
+          >
             Aakif Khan
-          </div>
+          </button>
 
           {/* Desktop Menu */}
           <ul className="hidden md:flex space-x-8">

@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import Image from 'next/image'
 
 const About = () => {
   return (
@@ -12,9 +13,17 @@ const About = () => {
         <div className="max-w-4xl mx-auto">
           <div className="bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 rounded-2xl shadow-2xl shadow-cyan-500/10 p-8 md:p-12 animate-slide-up">
             <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div>
-                <div className="w-64 h-64 mx-auto bg-gradient-to-br from-cyan-500 to-blue-600 rounded-full shadow-xl shadow-cyan-500/50 flex items-center justify-center">
-                  <span className="text-8xl">👨‍💻</span>
+              <div className="flex justify-center">
+                <div className="relative group">
+                  <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full blur-lg opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+                  <div className="relative w-64 h-64">
+                    <Image
+                      src="/profile.jpg"
+                      alt="Aakif Khan"
+                      fill
+                      className="rounded-full object-cover border-4 border-gray-900"
+                    />
+                  </div>
                 </div>
               </div>
               <div className="space-y-4">

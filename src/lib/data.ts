@@ -88,28 +88,30 @@ export const experiences = [
     title: 'Software Developer',
     company: 'Cognizant Technology Solutions',
     duration: 'Oct 2022 - Present',
-    description: 'Developed enterprise-scale frontend applications using React.js and Angular with TypeScript, building responsive user interfaces serving 10,000+ daily active users. Engineered 20+ reusable UI components and improved load times by 30%.',
-    technologies: ['React.js', 'Angular', 'TypeScript', 'Context API', 'React Hooks', 'REST APIs']
-  },
-  {
-    title: 'Software Developer (Continued)',
-    company: 'Cognizant Technology Solutions',
-    duration: 'Oct 2022 - Present',
-    description: 'Integrated RESTful APIs with OAuth 2.0 and JWT authentication. Collaborated with backend teams on 15+ Spring Boot microservices. Optimized performance resulting in 40% faster page loads and 20% increase in customer satisfaction.',
-    technologies: ['Java', 'Spring Boot', 'Microservices', 'OAuth 2.0', 'JWT']
+    responsibilities: [
+      'Developed enterprise-scale frontend applications using React.js and Angular with TypeScript',
+      'Built responsive user interfaces serving 10,000+ daily active users',
+      'Engineered 20+ reusable UI components with React Hooks and Angular modules',
+      'Improved application load times by 30% through efficient state management',
+      'Integrated RESTful APIs with OAuth 2.0 and JWT authentication',
+      'Collaborated with backend teams on 15+ Spring Boot microservices',
+      'Optimized performance resulting in 40% faster page loads and 20% increase in customer satisfaction'
+    ],
+    technologies: ['React.js', 'Angular', 'TypeScript', 'Context API', 'React Hooks', 'REST APIs', 'Java', 'Spring Boot', 'Microservices', 'OAuth 2.0', 'JWT']
   },
   {
     title: 'Software Engineer Intern',
     company: 'Cognizant Technology Solutions',
     duration: 'Mar 2022 - Sep 2022',
-    description: 'Contributed to enterprise Airline Reservation System using Java, Spring Boot, and RESTful web services. Designed and implemented 8+ REST APIs for booking management and payment processing, handling 500+ concurrent requests.',
-    technologies: ['Java', 'Spring Boot', 'REST APIs', 'MySQL', 'Oracle']
-  },
-  {
-    title: 'Software Engineer Intern (Continued)',
-    company: 'Cognizant Technology Solutions',
-    duration: 'Mar 2022 - Sep 2022',
-    description: 'Managed MySQL and Oracle database schemas, optimized queries through indexing. Followed Agile/Scrum methodologies with daily standups and sprint planning. Gained experience in AWS, DevOps, and CI/CD pipelines.',
-    technologies: ['MySQL', 'Oracle', 'Agile/Scrum', 'AWS', 'Git', 'CI/CD']
+    responsibilities: [
+      'Contributed to enterprise Airline Reservation System using Java and Spring Boot',
+      'Designed and implemented 8+ REST APIs for booking management and payment processing',
+      'Handled 500+ concurrent requests with optimized RESTful web services',
+      'Managed MySQL and Oracle database schemas with efficient query optimization',
+      'Implemented database indexing strategies to improve query performance',
+      'Followed Agile/Scrum methodologies with daily standups and sprint planning',
+      'Gained hands-on experience in AWS, DevOps practices, and CI/CD pipelines'
+    ],
+    technologies: ['Java', 'Spring Boot', 'REST APIs', 'MySQL', 'Oracle', 'Agile/Scrum', 'AWS', 'Git', 'CI/CD']
   }
 ]

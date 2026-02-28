@@ -167,39 +167,6 @@ const Contact = () => {
               </div>
             )}
           </form>
-          
-          <div className="mt-12 flex flex-wrap justify-center gap-4">
-            <a
-              href="mailto:aakifcse2022@gmail.com"
-              className="flex items-center gap-2 bg-gradient-to-r from-gray-800 to-gray-900 border border-gray-700 backdrop-blur-lg px-6 py-3 rounded-lg hover:border-cyan-500/50 hover:shadow-cyan-500/20 transition-all"
-            >
-              📧 aakifcse2022@gmail.com
-            </a>
-            <a
-              href="tel:+919596318292"
-              className="flex items-center gap-2 bg-gradient-to-r from-gray-800 to-gray-900 border border-gray-700 backdrop-blur-lg px-6 py-3 rounded-lg hover:border-cyan-500/50 hover:shadow-cyan-500/20 transition-all"
-            >
-              📞 +91 9596 318 292
-            </a>
-          </div>
-          <div className="mt-6 flex justify-center gap-6">
-            <a
-              href="https://linkedin.com/in/aakifkhan1299"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 bg-gradient-to-r from-gray-800 to-gray-900 border border-gray-700 backdrop-blur-lg px-6 py-3 rounded-lg hover:border-cyan-500/50 hover:shadow-cyan-500/20 transition-all"
-            >
-              💼 LinkedIn
-            </a>
-            <a
-              href="https://github.com/aakifkhan1299"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 bg-gradient-to-r from-gray-800 to-gray-900 border border-gray-700 backdrop-blur-lg px-6 py-3 rounded-lg hover:border-cyan-500/50 hover:shadow-cyan-500/20 transition-all"
-            >
-              👨‍💻 GitHub
-            </a>
-          </div>
         </div>
       </div>
     </section>
