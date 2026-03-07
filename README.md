@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website built with Next.js 14, TypeScript, and Tailwind CSS, featuring dark theme, smooth animations, and a professional contact form.
 
-🌐 **Live Demo**: [Your Vercel URL]  
+🌐 **Live Demo**: [[Vercel URL](https://portfolio-app-topaz-delta.vercel.app/)]  
 📧 **Email**: aakifcse2022@gmail.com  
 💼 **LinkedIn**: [linkedin.com/in/aakifkhan1299](https://linkedin.com/in/aakifkhan1299)  
 👨‍💻 **GitHub**: [github.com/aakifkhan1299](https://github.com/aakifkhan1299)
