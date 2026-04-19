@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import { experiences } from '../lib/data'
 
 const Experience = () => {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(null)
 
   return (
     <section id="experience" className="section bg-gradient-to-b from-black via-gray-900 to-black">
@@ -17,22 +17,23 @@ const Experience = () => {
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className="relative group animate-slide-up"
+              className="relative animate-slide-up"
               style={{ animationDelay: `${index * 0.2}s` }}
-              onMouseEnter={() => setHoveredIndex(index)}
-              onMouseLeave={() => setHoveredIndex(null)}
+              onClick={() =>
+                setExpandedIndex((prev) => (prev === index ? null : index))
+              }
             >
               <div
                 className={`card relative overflow-hidden transition-all duration-500 ${
-                  hoveredIndex === index
+                  expandedIndex === index
                     ? 'border-cyan-500 shadow-lg shadow-cyan-500/30 scale-[1.02]'
                     : 'border-gray-800'
                 }`}
               >
-                {/* Animated background gradient on hover */}
+                {/* Animated background gradient when expanded */}
                 <div
                   className={`absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-blue-600/5 transition-opacity duration-500 ${
-                    hoveredIndex === index ? 'opacity-100' : 'opacity-0'
+                    expandedIndex === index ? 'opacity-100' : 'opacity-0'
                   }`}
                 ></div>
 
@@ -56,7 +57,7 @@ const Experience = () => {
                   {/* Skills - Always visible (show limited initially) */}
                   <div className="flex flex-wrap gap-2 mb-4">
                     {exp.technologies
-                      .slice(0, hoveredIndex === index ? exp.technologies.length : 5)
+                      .slice(0, expandedIndex === index ? exp.technologies.length : 5)
                       .map((tech, i) => (
                         <span
                           key={i}
@@ -65,7 +66,7 @@ const Experience = () => {
                           {tech}
                         </span>
                       ))}
-                    {hoveredIndex !== index && exp.technologies.length > 5 && (
+                    {expandedIndex !== index && exp.technologies.length > 5 && (
                       <span className="px-3 py-1 text-xs text-gray-500">
                         +{exp.technologies.length - 5} more
                       </span>
@@ -75,7 +76,7 @@ const Experience = () => {
                   {/* Expandable responsibilities */}
                   <div
                     className={`transition-all duration-500 ease-in-out ${
-                      hoveredIndex === index
+                      expandedIndex === index
                         ? 'max-h-[500px] opacity-100'
                         : 'max-h-0 opacity-0 overflow-hidden'
                     }`}
@@ -100,12 +101,12 @@ const Experience = () => {
                     </div>
                   </div>
 
-                  {/* Hover indicator */}
-                  {hoveredIndex !== index && (
+                  {/* Expand indicator for mobile-friendly interaction */}
+                  {expandedIndex !== index && (
                     <div className="mt-4 pt-4 border-t border-gray-800">
                       <p className="text-xs text-gray-500 text-center flex items-center justify-center gap-2">
-                        <span className="animate-pulse">👆</span>
-                        Hover to see details
+                        <span className="animate-pulse">👇</span>
+                        Click to expand details
                       </p>
                     </div>
                   )}
