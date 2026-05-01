@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website built with Next.js 14, TypeScript, and Tailwind CSS, featuring dark theme, smooth animations, and a professional contact form.
 
-🌐 **Live Demo**: [[URL](aakif-khan-portfolio.vercel.app)]
+🌐 **Live Demo**: [aakif-khan-portfolio.vercel.app](https://aakif-khan-portfolio.vercel.app/)
 📧 **Email**: aakifcse2022@gmail.com  
 💼 **LinkedIn**: [linkedin.com/in/aakifkhan1299](https://linkedin.com/in/aakifkhan1299)  
 👨‍💻 **GitHub**: [github.com/aakifkhan1299](https://github.com/aakifkhan1299)
